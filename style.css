@@ -1,0 +1,148 @@
+*{
+    margin: 10px;
+    
+}
+body{
+    background-color: black;
+}
+/* Home section  which has the app name and nav bar. 
+The styling is applied by id */
+#home{
+    background-color:  #483355;
+    padding-bottom: 1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+}
+/* Application name inside the home section. 
+The styling is applied by tag name */
+
+header{
+    font-size: 30px;
+    color:  rgb(240, 234, 245);
+    /*floating to the left*/
+    float: left;
+    /*padding of 2 cm to the left*/
+    padding-left: 2cm;
+}
+
+/*The Navigation Bar Container as:
+Floating to the right 
+Padding of 1 cm to the right*/
+.topdiv {
+    float: right;
+    padding-right: 1cm;
+  }
+
+/*The Navigation Bar Buttons can have static styling*/
+.topmenu{
+    color: lightgray;
+    background-color: rgb(135,31,120);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1mm;
+    font-size: 20px;
+    text-decoration: none;
+}
+/*The Navigation Bar Buttons can have the below on-hover style*/
+.topmenu:hover{
+    color:white;
+    font-weight: bolder;
+    background-color: purple;
+    text-decoration: none;/*none means: optional*/
+}
+/*All the sections should have the below styling:
+Items are aligned vertically and positioned at the center. 
+Grid-based layout */
+#all-conversion-sections{
+   justify-content: center;
+   display: grid;
+
+}
+figure{
+    /*Alignment (justification) can be automatic */
+    justify-self: auto;
+    float: left;
+    width: 200px;
+}
+img{
+    width: 200px;
+}
+figcaption{
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+/* The conversion buttons can have static styling */
+button{
+    font-size: 20px;
+    border-radius: 40px;
+    border: transparent;
+    width: fit-content;
+    background-color: lightgreen;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*The conversion button should have on-hover styling of 
+changing the mouse appearance from an arrow to a pointer*/
+botton:hover{
+   cursor: pointer;
+}
+/*the calculator pannel*/
+.b{
+    border-top-style: solid;
+    border-top-width:20px ;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    
+}
+/*temperature class*/
+.temperature{
+border-top-color: green;
+}
+/*weight class*/
+.weight{
+    border-top-color:coral ;
+
+}
+
+/*distance class*/
+.distance{
+    border-top-color: cyan;
+}
+/*legend tag*/
+legend{
+font-size: 30px;
+font-weight: bolder;
+}
+
+/*floating home button(which we changed the name to: iconbutton)*/
+.iconbutton{
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background-color: rgb(225, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:40px;
+    /*at the extreme left*/
+    left:0;
+}
+/*img for the home button*/
+.iconbutton img{
+    width: 30px;
+}
+/*f tag*/
+footer {
+    background-color:rgb(240, 234, 245);
+    margin-top: 20px;
+}
